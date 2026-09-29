@@ -67,6 +67,7 @@ function mousePressed() {
     maxTexto = 0;
     indiceTexto = 1;
     hayTexto = true;
+    ganar = false;
   }
 }
 
