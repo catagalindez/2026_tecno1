@@ -57,17 +57,9 @@ function mousePressed() {
   let c = mascara[0].get(mouseX, mouseY);
 
   if (c[0] == 255) {
-    contador = 0;
-    maxTexto = 0;
-    indiceTexto = 0;
-    hayTexto = true;
-    ganar = true;
+    accionCambios(0, true);
   } else {
-    contador = 0;
-    maxTexto = 0;
-    indiceTexto = 1;
-    hayTexto = true;
-    ganar = false;
+    accionCambios(1, false);
   }
 }
 
@@ -96,7 +88,6 @@ function dibujarCajaDeTexto() {
     fill(0, 90);
     rect(30, 280, 340, 100, 20);
     pop();
-
     escribirTexto();
   }
 }
@@ -125,4 +116,12 @@ function destellosDeMagia() {
   if (contador < 250) {
     image(destello[nroSprite], 0, 0);
   }
+}
+
+function accionCambios(indice, _ganar) {
+  contador = 0;
+  maxTexto = 0;
+  indiceTexto = indice;
+  hayTexto = true;
+  ganar = _ganar;
 }
