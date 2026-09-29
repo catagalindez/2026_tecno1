@@ -4,6 +4,8 @@ let detective = 1;
 let narracion = 2;
 let villano = 3;
 
+let feliz = 0;
+
 let historia = [  //ejemplo de arreglos complejos (puede ponerse mas complejo... pero van a aprender un modo mas sencillo de hacer estas cosas...)
   [maguito, "Mis cajas animadas!!"],
   [maguito, "Muchas gracias Señor Detective!"],
@@ -33,5 +35,6 @@ let historia = [  //ejemplo de arreglos complejos (puede ponerse mas complejo...
   [narracion, "Y las cajas distinguen cuando alguien habla y cuando no"],
   [narracion, "Para tener unas animaciones incluso más interesantes."],
   [narracion, "..."],
-  [narracion, "FIN."]
+  [narracion, "FIN."],
+  [maguito, "Muchas gracias por ver!!"]
 ];

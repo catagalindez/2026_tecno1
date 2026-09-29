@@ -44,6 +44,7 @@ function setup() {
 
 
 function draw() {
+  background(255);
   dibujarFondo();
   contadorDeLaCajaDeTexto();
   if (hayTexto == true) {
@@ -54,7 +55,8 @@ function draw() {
 function mousePressed() {
 
   let c = mascara[numeroSeccionActual].get(mouseX, mouseY);
-
+  console.log(c);
+  
   if (numeroSeccionActual == 0) {
     if (c[0] == 255) {
       numeroSeccionActual++;
